@@ -1,0 +1,17 @@
+.about {
+	background-image: url(../images/dave-about_768w.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.about-text {
+	background-color: rgba(0, 0, 0, 0.85);
+	color: #fff;
+	border-radius: 10px 10px 10px 10px;
+	overflow: auto;
+	max-height: 100%;
+}
+
+.spacer {
+	width: 33%;
+}

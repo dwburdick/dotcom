@@ -1,0 +1,161 @@
+@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+body {
+	display: -webkit-flex; /* Safari */
+	-webkit-flex-wrap: wrap; /* Safari 6.1+ */
+	-ms-flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
+	font-family: 'Georgia', serif;
+	font-size: 16px;
+	line-height: 1.25em;
+}
+
+img,
+video,
+object,
+embed {
+	max-width: 100%;
+}
+
+/* LAYOUT */
+
+.social {
+	text-align: right;
+	margin-bottom: 10px;
+}
+
+.teaser-text {
+	opacity: 0;
+	height: 0px;
+}
+
+.footer {
+	font-family: 'Exo 2', sans-serif;
+	font-size: 0.8em;
+	color: #999;
+	text-align: right;
+	margin: 10px;
+}
+
+/* TYPE */
+
+a:link {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Exo 2', sans-serif;
+}
+
+h1 a,
+h1 a:visited,
+h1 a:hover,
+h1 a:active,
+h2 a,
+h2 a:visited,
+h2 a:hover,
+h2 a:active,
+h3 a,
+h3 a:visited,
+h3 a:hover,
+h3 a:active,
+h4 a,
+h4 a:visited,
+h4 a:hover,
+h4 a:active {
+	color: #666;
+}
+
+h1 {
+	color: #666;
+	margin-bottom: 2px;
+	font-weight: 200;
+}
+
+h2,
+h3 {
+	font-weight: 300;
+}
+
+h4 {
+	color: #6600ff;
+	margin-top: 2px;
+	font-weight: 300;
+}
+
+/* zocial */
+[class*="zocial-"]:before {
+	font-family: 'zocial', sans-serif;
+	font-size: 1em;
+	color: #6600ff;
+}
+
+/* 10.0.1.4:83 */
+
+@media (max-width: 768px) {
+	.intro {
+		margin-top: 20px;
+	}
+
+	.hello {
+		font-size: 1.5em;
+	}
+
+	.social {
+		text-align: center;
+	}
+
+	h1, h4 {
+		text-align: center;
+	}
+
+	[class*="zocial-"]:before {
+		font-size: 1.75em;
+		margin-right: 10px;
+	}
+
+	[class*="zocial-"]:before:last-of-type {
+		margin-right: 0px;
+	}
+
+	h4 {
+		font-family: 'Dosis', sans-serif;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+}
+
+@media (min-width: 1000px ) {
+
+	/* Bottom-align text and images while using Bootstrap */
+
+	.row {
+		position: relative;
+	}
+
+	.bottom-align {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+
+}
+
+@media (min-width: 1200px) {
+
+/* Add teaser text on large displays */
+
+/* need to change below to display: inline or similar */
+
+	.teaser-text {
+		opacity: 1;
+		font-family: 'Exo 2', sans-serif;
+		font-weight: 300;
+		color: #666;
+		height: auto;
+	}
+}
