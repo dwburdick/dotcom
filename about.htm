@@ -1,37 +1,75 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.js">
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="css/about.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href='http://fonts.googleapis.com/css?family=Exo+2:300,200' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Dosis:700' rel='stylesheet' type='text/css'>
-		<meta charset="utf-8">
-		<title>Dave Burdick</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script>
+		    // Picture element HTML5 shiv
+		    document.createElement( "picture" );
+		</script>
+		<script src="js/picturefill.min.js" async></script>
+		<script src="js/map.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCympWzL_K7B_tKZ5WTrfDEy8XDDOrFwo8&callback=initMap">
+	    </script>
+		<title>Dave Burdick, journalist, communicator, writer, developer</title>
 	</head>
 	<body>
 		<div class="container">
-			<div class="row">
-				<div class="row about-header">
-					<picture>
-						<img
-						srcset="images/dave-about_2x.jpg 2x, images/dave-about_1x.jpg 1080w, images/dave-about_768w.jpg 768w, images/dave-about_480w.jpg 480w"
-						src="images/dave-about_768w.jpg"
-						alt="Dave Burdick on a train platform in the Bronx, New York."
-					</picture>
+			<header>
+				<div class="row">
+					<div class="col-md-8">
+						<h1><a href="index.htm">Dave Burdick</a></h1>
+						<h4>about</h4>
+					</div>
+					<div class="col-md-4 social bottom-align">
+						<span class="zocial-linkedin" onclick="window.open('https://www.linkedin.com/profile/view?id=AAIAAACejhcBHhMPpFgksWeiojEkp-Ni5lHaZqk&amp;trk=nav_responsive_tab_profile', '_blank')"></span>
+						<span class="zocial-twitter" onclick="window.open('http://twitter.com/daveburdick', '_blank')"></span>
+						<span class="zocial-email" onclick="window.open('http://tinyletter.com/daveburdick', '_blank')"></span>
+						<span class="zocial-github" onclick="window.open('https://github.com/dwburdick', '_blank')"></span>
+						<span class="zocial-spotify" onclick="window.open('https://open.spotify.com/user/daveburdick', '_blank')"></span>
+					</div>
 				</div>
-				<div class="about-text">Hey, you're not permitted in there. It's restricted. You'll be deactivated for sure.. Don't call me a mindless philosopher, you overweight glob of grease! Now come out before somebody sees you. Secret mission? What plans? What are you talking about? I'm not getting in there! I'm going to regret this. There goes another one. Hold your fire. There are no life forms. It must have been short-circuited. That's funny, the damage doesn't look as bad from out here. Are you sure this things safe?
-
-That malfunctioning little twerp. This is all his fault! He tricked me into going this way, but he'll do no better. Wait, what's that? A transport! I'm saved! Over here! Help! Please, help! Artoo-Detoo! It's you! It's you!
-
-Stand by, Chewie, here we go. Cut in the sublight engines. What the...? Aw, we've come out of hyperspace into a meteor shower. Some kind of asteroid collision. It's not on any of the charts. What's going on? Our position is correct, except...no, Alderaan! What do you mean? Where is it? Thats what I'm trying to tell you, kid. It ain't there. It's been totally blown away. What? How? Destroyed...by the Empire!
-
-Remember, a Jedi can feel the Force flowing through him. You mean it controls your actions? Partially. But it also obeys your commands. Hokey religions and ancient weapons are no match for a good blaster at your side, kid. You don't believe in the Force, do you? Kid, I've flown from one side of this galaxy to the other. I've seen a lot of strange stuff, but I've never seen anything to make me believe there's one all-powerful force controlling everything. There's no mystical energy field that controls my destiny. It's all a lot of simple tricks and nonsense. I suggest you try it again, Luke. This time, let go your conscious self and act on instinct. With the blast shield down, I can't even see. How am I supposed to fight? Your eyes can deceive you. Don't trust them.
-
-We've entered the Alderaan system. Governor Tarkin, I should have expected to find you holding Vader's leash. I recognized your foul stench when I was brought on board. Charming to the last. You don't know how hard I found it signing the order to terminate your life! I surprised you had the courage to take the responsibility yourself! Princess Leia, before your execution I would like you to be my guest at a ceremony that will make this battle station operational. No star system will dare oppose the Emperor now. The more you tighten your grip, Tarkin, the more star systems will slip through your fingers.
+			</header>
+			<div class="row">
+				<div class="col-md-6 splash">
+				<picture>
+						<source srcset="images/dave-about_480w.jpg" media="(max-width: 480px)">
+						<source srcset="images/dave-about_2x.jpg" media="(-webkit-min-device-pixel-ratio: 2)">
+						<source srcset="images/dave-about_1x.jpg" media="(min-width: 1080px)">
+						<img src="images/dave-about_768w.jpg"
+						alt="Dave Burdick on a train platform in the Bronx, New York."
+						>
+				</picture>
+				</div>
+				<div class="col-md-6 bottom-align intro">
+					<span class="hello">Hello!</span> I'm a human male living in Denver and otherwise spending a lot of time in New York City. I spend a lot of time learning, which is probably my chief hobby. Others include reading, writing, casual hiking, board games and watching soccer. During traditional business hours, you can find me at the Denver Post, where I am described as the deputy features editor and entertainment editor.
 				</div>
 			</div>
+			<div id="mapContainer" style="height:100%; width:100%; margin-top:10px">
+					<div style="height:400px; width:100%" id="map">
+					</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h3>Awards</h3>
+					<div class="about-text">
+						I've won awards for journalism and for Twitter and they're so stupid that I don't want to say any more than that.
+					</div>
+				</div>
+				<div class="col-md-6">
+					<h3>More</h3>
+				</div>
+			</div>
+			<footer>
+				<div class="row footer">
+					<p>Dave Burdick made this.</p>
+				</div>
+			</footer>
 		</div>
 	</body>
 </html>
+
