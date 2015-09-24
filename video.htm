@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/video.css">
 		<link href='http://fonts.googleapis.com/css?family=Exo+2:300,200' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Dosis:700' rel='stylesheet' type='text/css'>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,9 +13,6 @@
 		    document.createElement( "picture" );
 		</script>
 		<script src="js/picturefill.min.js" async></script>
-		<script src="js/map.js"></script>
-		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCympWzL_K7B_tKZ5WTrfDEy8XDDOrFwo8&callback=initMap">
-	    </script>
 		<title>Dave Burdick, journalist, communicator, writer, developer</title>
 	</head>
 	<body>
@@ -23,7 +21,7 @@
 				<div class="row">
 					<div class="col-md-8">
 						<h1><a href="index.htm">Dave Burdick</a></h1>
-						<h4>about</h4>
+						<h4>video</h4>
 					</div>
 					<div class="col-md-4 social bottom-align">
 						<span class="zocial-linkedin" onclick="window.open('https://www.linkedin.com/profile/view?id=AAIAAACejhcBHhMPpFgksWeiojEkp-Ni5lHaZqk&amp;trk=nav_responsive_tab_profile', '_blank')"></span>
@@ -37,21 +35,18 @@
 			<div class="row">
 				<div class="col-md-6 splash">
 				<picture>
-						<source srcset="images/dave-about_480w.jpg" media="(max-width: 480px)">
-						<source srcset="images/dave-about_2x.jpg" media="(-webkit-min-device-pixel-ratio: 2)">
-						<source srcset="images/dave-about_1x.jpg" media="(min-width: 1080px)">
-						<img src="images/dave-about_768w.jpg"
-						alt="Dave Burdick on a train platform in the Bronx, New York."
+						<source srcset="images/video-old_480w.jpg" media="(max-width: 480px)">
+						<img src="images/video-old_768w.jpg"
+						alt="Dave Burdick at the Secret Circus in 2006."
 						>
 				</picture>
 				</div>
 				<div class="col-md-6 bottom-align intro">
-					<span class="hello">Hello!</span> I'm a human male living in Denver and otherwise spending a lot of time in New York City. I spend a lot of time learning, which is probably my chief hobby. Others include reading, writing, casual hiking, board games and watching soccer. During traditional business hours, you can find me at the Denver Post, where I am described as the deputy features editor and entertainment editor.
+					<p><span class="hello">A long time ago (pictured),</span> I was a comedian. It started in college with sketch comedy, but out in the real world I earned a little spending money by telling jokes at places in Colorado like the Redfish, which is gone now, Jazz At Jack's, which hadn't yet moved into the Pavilions, and some other places that haven't changed all that much.</p>
+					<p>I hosted two different open-mic shows in Boulder (not concurrently), and I started a variety show called the Secret Circus. That show turned out to be my primary source of income for a year in which journalism didn't treat me very well.</p>
+					<p>Point being, I've spent a lot of time on stage and in front of cameras delivering all manner of ridiculous dialogue.</p>
+					<p>Most recently, I hosted a short series of videos for The Denver Post, one example of which you see below.</p>
 				</div>
-			</div>
-			<div id="mapContainer" style="height:100%; width:100%; margin-top:10px">
-					<div style="height:400px; width:100%" id="map">
-					</div>
 			</div>
 			<div class="row">
 				<div class="col-md-6">
@@ -60,8 +55,8 @@
 						I've won awards for journalism and for Twitter and they're so stupid that I don't want to say any more about it than that.
 					</div>
 				</div>
-				<div class="col-md-6">
-					<h3>More</h3>
+				<div class="col-md-6 vid-container">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/tgtJfIRkjkc" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</div>
 			<footer>
