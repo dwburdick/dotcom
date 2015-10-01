@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/reviews.css">
@@ -12,6 +13,22 @@
 		    document.createElement( "picture" );
 		</script>
 		<script src="js/picturefill.js" async></script>
+		<script src="js/books.js"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+		<script id="book-template" type="text/x-handlebars-template">
+		{{#each entries}}
+			<div class="book-review {{bookCode}}">
+				<picture class="book-cover">
+					<source media="(min-width: 531px) and (max-width: 768px)" srcset="images/books/{{bookCode}}_665w.jpg">
+					<img src="images/books/{{bookCode}}_480w.jpg" alt="{{imgAlt}}">
+				</picture>
+				<a href="{{bookUrl}}"><h2>{{title}}</h2><br>
+				<h3>By {{author}}</h3></a>
+				<p class="rvu-teaser">{{{teaser}}}</p>
+			</div>
+		{{/each}}
+		</script>
 		<title>Dave Burdick book reviews</title>
 	</head>
 	<body>
@@ -35,6 +52,7 @@
 				<div class="2015"><h4>2015</h4>
 				</div>
 				<div class="reviews">
+					<div class="reviews content-placeholder"></div>
 					<div class="book-review bright-lines">
 						<picture class="book-cover">
 							<source media="(min-width: 531px) and (max-width: 768px)" srcset="images/books/bright-lines_665w.jpg">
