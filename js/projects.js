@@ -13,7 +13,7 @@ $(function () {
         "subtitle": "HTML, CSS, JS, tabletop.js",
         "imgUrl": "weekend-generator.gif",
         "projectUrl": "http://extras.denverpost.com/app/weekendgenerator",
-        "problem": "The Denver Post had old content that wasn't getting surfaced.",
+        "problem": "The Denver Post had old content that still had value but wasn't getting surfaced.",
         "solution": "Using tabletop.js, I created a widget that would call a random dining review and a random travel story culled from two easily-updated Google spreadsheets."
       },
      {

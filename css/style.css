@@ -94,7 +94,41 @@ h4 {
 	color: #6600ff;
 }
 
-/* 10.0.1.4:83 */
+/* projects */
+
+.projects {
+	flex-wrap: wrap;
+	display: flex;
+}
+
+.project-img {
+	margin-bottom: 5px;
+}
+
+.project-entry h2,
+.project-entry h3 {
+	background-color: rgba(0, 0, 0, 0.85);
+	color: #fff;
+	margin-bottom: 0px;
+	display: inline-block;
+}
+.project-entry h2 a:link,
+.project-entry h3 a:link {
+	color: #fff;
+}
+.project-entry h2 {
+	font-family: 'Dosis', sans-serif;
+	font-weight: 700;
+	margin-top: 2em;
+	font-size: 1.5em;
+	margin-bottom: 0px;
+	text-transform: uppercase;
+}
+.project-entry h3 {
+	margin-top: -1px;
+	font-size: 1em;
+	line-height: 1.5em;
+}
 
 @media (max-width: 768px) {
 	.intro {
