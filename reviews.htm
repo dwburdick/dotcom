@@ -18,14 +18,14 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
 		<script id="book-template" type="text/x-handlebars-template">
 		{{#each entries}}
-			<div class="book-review {{bookCode}}">
-				<picture class="book-cover">
-					<source media="(min-width: 531px) and (max-width: 768px)" srcset="images/books/{{bookCode}}_665w.jpg">
-					<img src="images/books/{{bookCode}}_480w.jpg" alt="{{imgAlt}}">
-				</picture>
-				<a href="{{bookUrl}}"><h2>{{title}}</h2><br>
-				<h3>By {{author}}</h3></a>
-				<p class="rvu-teaser">{{{teaser}}}</p>
+			<div class="book-review">
+				<div class="book-banner" style="background-image: url(images/books-crop/{{bookCode}}.jpg);">
+					<a href="{{bookUrl}}"><h2>{{title}}</h2><br>
+					<h3>By {{author}}</h3></a>
+				</div>
+				<div>
+					<p class="rvu-teaser">{{{teaser}}}</p>
+				</div>
 			</div>
 		{{/each}}
 		</script>

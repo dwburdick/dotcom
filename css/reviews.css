@@ -14,6 +14,15 @@ h2, h3 {
 	width: 100%;
 	margin-bottom: 10px;
 }
+.book-banner {
+	border-radius: 10px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.book-banner h3 {
+	border-radius: 0px 0px 0px 10px;
+}
+
 .book-cover{
 	width: 33%;
 	float: left;
@@ -24,84 +33,30 @@ h2, h3 {
 	margin-top: 10px;
 }
 
-@media screen and (max-width: 530px) {
-	.book-review {
-		width: 100%;
-		border-radius: 0px;
-		margin-bottom: 0px;
-		border-width: 0px;
-	}
-	.book-review:first-of-type {
-		border-radius: 10px 10px 0px 0px;
-	}
-	.book-review:last-of-type {
-		border-radius: 0px 0px 10px 10px;
-		margin-bottom: 10px;
-	}
-	.book-cover {
-		display: none;
-	}
-	.rvu-teaser {
-		display: none;
-	}
-	.bright-lines {
-		background-image: url(../images/books-crop/bright-lines.jpg);
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-	.dark-forest {
-		background-image: url(../images/books-crop/dark-forest.jpg);
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-	.confession {
-		background-image: url(../images/books-crop/confession.jpg);
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-	.water-knife {
-		background-image: url(../images/books-crop/water-knife.jpg);
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-	.tusk {
-		background-image: url(../images/books-crop/tusk.jpg);
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-	.disgruntled {
-		background-image: url(../images/books-crop/disgruntled.jpg);
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-	h2, h3 {
-		background-color: rgba(0, 0, 0, 0.85);
-		color: #fff;
-		margin-bottom: 0px;
-		display: inline-block;
-	}
-	h2 a:link, h3 a:link {
-		color: #fff;
-	}
-	h2 {
-		font-family: 'Dosis', sans-serif;
-		font-weight: 700;
-		margin-top: 2em;
-		font-size: 1.5em;
-		margin-bottom: 0px;
-		text-transform: uppercase;
-	}
-	h3 {
-		margin-top: -1px;
-		font-size: 1em;
-		line-height: 1.5em;
-	}
-	.book-review:last-of-type h3 {
-		border-radius: 0px 0px 0px 10px;
-	}
+h2, h3 {
+	background-color: rgba(0, 0, 0, 0.85);
+	color: #fff;
+	margin-bottom: 0px;
+	display: inline-block;
+}
+h2 a:link, h3 a:link {
+	color: #fff;
+}
+h2 {
+	font-family: 'Dosis', sans-serif;
+	font-weight: 700;
+	margin-top: 2em;
+	font-size: 1.5em;
+	margin-bottom: 0px;
+	text-transform: uppercase;
+}
+h3 {
+	margin-top: -1px;
+	font-size: 1em;
+	line-height: 1.5em;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 540px) {
 	.book-review{
 		width: calc((100% - 20px) / 2);
 		margin-bottom: 10px;
