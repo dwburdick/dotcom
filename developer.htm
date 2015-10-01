@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href='http://fonts.googleapis.com/css?family=Exo+2:300,200' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Dosis:700' rel='stylesheet' type='text/css'>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script>
+		    // Picture element HTML5 shiv
+		    document.createElement( "picture" );
+		</script>
+		<script src="js/picturefill.min.js" async></script>
+		<script src="js/projects.js" async></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+
+		<script id="project-template" type="text/x-handlebars-template">
+		{{#each entries}}
+		  <div class="col-md-6 col-xs-12 project-entry" >
+		  	<a href="{{projectUrl}}" target=_blank><h2>{{title}}</h2><br>
+		  	<h3>{{subtitle}}</h3><br>
+		  	<img src="images/projects/{{imgUrl}}" class="project-img"></a>
+		  	<p class="project-text"><strong>The need: </strong>{{problem}}</p>
+		  	<p class="project-text"><strong>The solution: </strong>{{solution}}</p>
+		  </div>
+		{{/each}}
+		</script>
+
+		<title>Dave Burdick, journalist, communicator, writer, developer</title>
+	</head>
+	<body>
+		<div class="container">
+			<header>
+				<div class="row">
+					<div class="col-md-8">
+						<h1><a href="index.htm">Dave Burdick</a></h1>
+						<h4>web developer</h4>
+					</div>
+					<div class="col-md-4 social bottom-align">
+						<span class="zocial-linkedin" onclick="window.open('https://www.linkedin.com/profile/view?id=AAIAAACejhcBHhMPpFgksWeiojEkp-Ni5lHaZqk&amp;trk=nav_responsive_tab_profile', '_blank')"></span>
+						<span class="zocial-twitter" onclick="window.open('http://twitter.com/daveburdick', '_blank')"></span>
+						<span class="zocial-email" onclick="window.open('http://tinyletter.com/daveburdick', '_blank')"></span>
+						<span class="zocial-github" onclick="window.open('https://github.com/dwburdick', '_blank')"></span>
+						<span class="zocial-spotify" onclick="window.open('https://open.spotify.com/user/daveburdick', '_blank')"></span>
+					</div>
+				</div>
+			</header>
+			<div class="row">
+				<div class="col-md-4 splash">
+				<picture>
+						<source srcset="images/dave-about_480w.jpg" media="(max-width: 480px)">
+						<source srcset="images/dave-about_2x.jpg" media="(-webkit-min-device-pixel-ratio: 2)">
+						<source srcset="images/dave-about_1x.jpg" media="(min-width: 1080px)">
+						<img src="images/dave-about_768w.jpg"
+						alt="Dave Burdick on a train platform in the Bronx, New York."
+						>
+				</picture>
+				</div>
+				<div class="col-md-8 bottom-align intro">
+					<p><span class="hello">I started learning</span> HTML in 1998, when I was a teenage nerd trying to build a Star Wars fan site with my best friend. We did it, we started a club that gained some 400 members from all over the world, and I was hooked on the power of the internet.</p>
+					<p>More recently, I've taken online courses from Codecademy and Udacity to learn JavaScript, Python, jQuery and more about HTML5. I'm still learning, and I always will be, but here are some of the things I've put together so far.</p>
+				</div>
+			</div>
+			<div class="row projects">
+				<div class="content-placeholder"></div>
+			</div>
+			<footer>
+				<div class="row footer">
+					<p>Dave Burdick made this.</p>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
+
