@@ -23,6 +23,14 @@ $(function () {
         "projectUrl": "http://arapahoenews.com",
         "problem": "Arapahoe Community College's news site wanted a very simple weather widget.",
         "solution": "I used the Weather Underground API to create the widget."
+      },
+     {
+        "title": "This site",
+        "subtitle": "HTML, CSS, JS, Bootstrap, Handlebars",
+        "imgUrl": "dave.jpg",
+        "projectUrl": "http://daveburdick.com",
+        "problem": "I needed a site that reflected my growing skillset and weird hodgepodge of interests, and that also gave me the opportunity to try different frameworks.",
+        "solution": "Here we are! Ever under construction..."
       }
     ]
 };
