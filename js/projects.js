@@ -1,3 +1,10 @@
+Handlebars.registerHelper("everyOther", function (index, amount, scope) {
+    if ( ++index % amount )
+        return scope.inverse(this);
+    else
+        return scope.fn(this);
+});
+
 $(function () {
   // Grab the template script
   var theTemplateScript = $("#project-template").html();
@@ -17,6 +24,14 @@ $(function () {
         "solution": "Using tabletop.js, I created a widget that would call a random dining review and a random travel story culled from two easily-updated Google spreadsheets."
       },
      {
+        "title": "This site",
+        "subtitle": "HTML, CSS, JS, Bootstrap, Handlebars",
+        "imgUrl": "dave.jpg",
+        "projectUrl": "http://daveburdick.com",
+        "problem": "I needed a site that reflected my growing skillset and weird hodgepodge of interests, and that also gave me the opportunity to try different frameworks.",
+        "solution": "Here we are! Ever under construction..."
+      },
+     {
         "title": "Weather bug",
         "subtitle": "HTML, CSS, JS, wunderground API",
         "imgUrl": "wxbug.jpg",
@@ -24,14 +39,6 @@ $(function () {
         "problem": "Arapahoe Community College's news site wanted a very simple weather widget.",
         "solution": "I used the Weather Underground API to create the widget."
       },
-     {
-        "title": "This site",
-        "subtitle": "HTML, CSS, JS, Bootstrap, Handlebars",
-        "imgUrl": "dave.jpg",
-        "projectUrl": "http://daveburdick.com",
-        "problem": "I needed a site that reflected my growing skillset and weird hodgepodge of interests, and that also gave me the opportunity to try different frameworks.",
-        "solution": "Here we are! Ever under construction..."
-      }
     ]
 };
 

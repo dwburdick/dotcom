@@ -1,3 +1,10 @@
+Handlebars.registerHelper("everyOther", function (index, amount, scope) {
+    if ( ++index % amount )
+        return scope.inverse(this);
+    else
+        return scope.fn(this);
+});
+
 $(function () {
   // Grab the template script
   var theTemplateScript = $("#project-template").html();
