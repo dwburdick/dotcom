@@ -38,6 +38,10 @@ embed {
 	margin: 10px;
 }
 
+.writing {
+	height: 200px;
+}
+
 /* TYPE */
 
 a:link {
@@ -128,7 +132,15 @@ h4 {
 	font-size: 1em;
 	line-height: 1.5em;
 }
-
+.project-source {
+	font-family: 'Dosis', sans-serif;
+	text-transform: uppercase;
+	display:inline-block;
+	color: #fff;
+	background-color: #6600ff;
+	border-radius: 5px;
+	padding: 2px;
+}
 @media (max-width: 768px) {
 	.intro {
 		margin-top: 20px;
