@@ -8,11 +8,23 @@
 		<link href='http://fonts.googleapis.com/css?family=Exo+2:300,200' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Dosis:700' rel='stylesheet' type='text/css'>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script>
 		    // Picture element HTML5 shiv
 		    document.createElement( "picture" );
 		</script>
 		<script src="js/picturefill.min.js" async></script>
+		<script src="js/video.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+		<script id="video-template" type="text/x-handlebars-template">
+		{{#each entries}}
+			<div class="col-md-4 video-still">
+				<a href="{{projectUrl}}"><h2>{{title}}</h2>
+				<h3>{{subtitle}}</h3>
+				<img src="images/videos/{{imgUrl}}.jpg"></a>
+			</div>
+		{{/each}}
+		</script>
 		<title>Dave Burdick, journalist, communicator, writer, developer</title>
 	</head>
 	<body>
@@ -21,7 +33,7 @@
 				<div class="row">
 					<div class="col-md-8">
 						<h1><a href="index.htm">Dave Burdick</a></h1>
-						<h4>video</h4>
+						<h4>speaker/performer</h4>
 					</div>
 					<div class="col-md-4 social bottom-align">
 						<span class="zocial-linkedin" onclick="window.open('https://www.linkedin.com/profile/view?id=AAIAAACejhcBHhMPpFgksWeiojEkp-Ni5lHaZqk&amp;trk=nav_responsive_tab_profile', '_blank')"></span>
@@ -33,7 +45,7 @@
 				</div>
 			</header>
 			<div class="row">
-				<div class="col-md-6 splash">
+				<div class="col-md-4 splash">
 				<picture>
 						<source srcset="images/video-old_480w.jpg" media="(max-width: 480px)">
 						<img src="images/video-old_768w.jpg"
@@ -41,24 +53,16 @@
 						>
 				</picture>
 				</div>
-				<div class="col-md-6 bottom-align intro">
-					<p><span class="hello">A long time ago (pictured),</span> I was a comedian. It started in college with sketch comedy, but out in the real world I earned a little spending money by telling jokes at places in Colorado like the Redfish, which is gone now, Jazz At Jack's, which isn't where it was anymore, and the Albums Bistro, which was basically never there at all.</p>
-					<p>I hosted two different open-mic shows in Boulder (not concurrently), and I started a variety show called the Secret Circus. That show turned out to be my primary source of income for a year in which journalism didn't treat me very well.</p>
+				<div class="col-md-8 bottom-align intro">
+					<p><span class="hello">A long time ago (pictured),</span> I was a comedian.</p>
+					<p>I hosted open-mic shows in Boulder, and I started a variety show called the Secret Circus, which turned out to be my primary source of income for a year in which journalism didn't treat me very well.</p>
+					<p>I also made <a href="https://youtu.be/tgtJfIRkjkc">a comedy webseries for NBC/Universal</a> with my friend Reid in 2007.</p>
 					<p>Point being, I've spent a lot of time on stage and in front of cameras delivering all manner of ridiculous dialogue.</p>
-					<p>Most recently, I hosted a short series of videos for The Denver Post, one example of which you see below.</p>
+					<p>Most recently, I hosted a short series of videos for The Denver Post.</p>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6">
-					<div class="vid-container">
-						<iframe src="https://www.youtube.com/embed/tgtJfIRkjkc" frameborder="0" allowfullscreen></iframe>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="vid-container">
-						<iframe src="http://dptv.denverpost.com/2015/07/02/things-to-do-in-denver-with-dave-burdick-on-july-4th-weekend/?iframe=1" frameborder="0" allowfullscreen seamless scrolling="no"></iframe>
-					</div>
-				</div>
+				<div class="content-placeholder"></div>
 			</div>
 			<footer>
 				<div class="row footer">

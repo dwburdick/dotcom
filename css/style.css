@@ -98,6 +98,33 @@ h4 {
 	color: #6600ff;
 }
 
+/* video */
+
+.video-still img {
+	border-radius: 10px;
+	margin-top: 10px;
+}
+
+.video-still h2,
+.video-still h3 {
+	color: #6600ff;
+	margin-bottom: 0px;
+	display: inline-block;
+}
+
+.video-still h2 {
+	font-family: 'Dosis', sans-serif;
+	font-weight: 700;
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
+.video-still h3 {
+	margin-top: -1px;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
 /* projects */
 
 .projects {
@@ -124,7 +151,6 @@ h4 {
 	font-weight: 700;
 	margin-top: 2em;
 	font-size: 1.5em;
-	margin-bottom: 0px;
 	text-transform: uppercase;
 }
 .project-entry h3 {
@@ -141,7 +167,7 @@ h4 {
 	border-radius: 5px;
 	padding: 2px;
 }
-@media (max-width: 768px) {
+@media (max-width: 991px) {
 	.intro {
 		margin-top: 20px;
 	}
