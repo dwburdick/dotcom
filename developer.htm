@@ -17,7 +17,9 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
 
 		<script id="project-template" type="text/x-handlebars-template">
-		{{#each entries}}
+		{{#grouped_each 2 entries}}
+		<div class="row projects">
+		{{#each this}}
 		  <div class="col-md-6 col-xs-12 project-entry" >
 		  	<a href="{{projectUrl}}" target=_blank><h2>{{title}}</h2><br>
 		  	<h3>{{subtitle}}</h3><br>
@@ -26,6 +28,8 @@
 		  	<p class="project-text"><strong>The solution: </strong>{{solution}}</p>
 		  </div>
 		{{/each}}
+		</div>
+		{{/grouped_each}}
 		</script>
 
 		<title>Dave Burdick, journalist, communicator, writer, developer</title>
@@ -63,9 +67,7 @@
 					<p>More recently, I've taken online courses from Codecademy and Udacity to learn JavaScript, Python, jQuery and more about HTML5. I'm still learning, and I always will be, but here are some of the things I've put together so far.</p>
 				</div>
 			</div>
-			<div class="row projects">
-				<div class="content-placeholder"></div>
-			</div>
+			<div class="content-placeholder"></div>
 			<footer>
 				<div class="row footer">
 					<p>Dave Burdick made this.</p>

@@ -39,7 +39,7 @@ embed {
 }
 
 .writing {
-	height: 200px;
+	display: inline-block;
 }
 
 /* TYPE */

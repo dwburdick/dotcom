@@ -1,8 +1,16 @@
-Handlebars.registerHelper("everyOther", function (index, amount, scope) {
-    if ( ++index % amount )
-        return scope.inverse(this);
-    else
-        return scope.fn(this);
+Handlebars.registerHelper('grouped_each', function(every, context, options) {
+    var out = "", subcontext = [], i;
+    if (context && context.length > 0) {
+        for (i = 0; i < context.length; i++) {
+            if (i > 0 && i % every === 0) {
+                out += options.fn(subcontext);
+                subcontext = [];
+            }
+            subcontext.push(context[i]);
+        }
+        out += options.fn(subcontext);
+    }
+    return out;
 });
 
 $(function () {
@@ -34,7 +42,7 @@ $(function () {
         "subtitle": "from Dave in HR",
         "source": "Interesting disclosures within",
         "projectUrl": "http://tinyletter.com/daveburdick/letters/interesting-disclosures-3-a-revised-office-wearable-technology-policy-from-dave-in-hr",
-        "text": "Professor Tracy Mott has been teaching economics at the University of Denver since 1991. I called him one afternoon last week to ask him one question: Could I sell him a quarter for 26 cents?"
+        "text": "The times, they are a-changin’, and so is our dress code, in particular the rules pertaining to wearable technology. The full policy can always be accessed on our intranet site, but here are the highlights."
       },
       {
         "title": "\"May I speak to Santa?\"",

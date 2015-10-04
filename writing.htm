@@ -17,7 +17,9 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
 
 		<script id="project-template" type="text/x-handlebars-template">
-		{{#each entries}}
+		{{#grouped_each 2 entries}}
+		<div class="row projects">
+		{{#each this}}
 		  <div class="col-md-6 col-xs-12 project-entry writing">
 		  	<a href="{{projectUrl}}" target=_blank><h2>{{title}}</h2><br>
 		  	<h3>{{subtitle}}</h3></a><br>
@@ -25,6 +27,8 @@
 		  	<p class="project-text">{{text}}</p>
 		  </div>
 		{{/each}}
+		</div>
+		{{/grouped_each}}
 		</script>
 
 		<title>Dave Burdick, journalist, communicator, writer, developer</title>
@@ -57,8 +61,8 @@
 					<p>Here are a few things that people have enjoyed.</p>
 				</div>
 			</div>
-			<div class="row projects">
-				<div class="content-placeholder"></div>
+			<div class="content-placeholder">
+
 			</div>
 			<footer>
 				<div class="row footer">
