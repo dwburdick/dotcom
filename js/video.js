@@ -16,7 +16,7 @@ $(function () {
       },
       {
         "title": "The Guys in 3A",
-        "subtitle": "NBC's Dot Comedy'",
+        "subtitle": "NBC's Dot Comedy",
         "projectUrl": "https://www.youtube.com/watch?v=tgtJfIRkjkc",
         "imgUrl": "3a",
       },

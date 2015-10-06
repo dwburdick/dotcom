@@ -31,6 +31,13 @@ $(function () {
         "text": "He informed me that he was calling from Microsoft, and that there was reason to believe that my computer had recently been compromised by the internet hackers."
       },
       {
+        "title": "\"May I speak to Santa?\"",
+        "subtitle": "Here's how fast your information is sold when you fill out a sketchy form",
+        "source": "The Denver Post",
+        "projectUrl": "http://blogs.denverpost.com/personalinterest/2013/11/14/looking-for-a-job-because-heres-something-else/2321/",
+        "text": "Oh, how nice! After that vaguely job-related tweet, I got this spam reply. Let's have a look down this rabbit hole."
+      },
+      {
         "title": "Haha, a pig!",
         "subtitle": "A guy in my neighborhood has one of those artisanal pet pigs",
         "source": "Interesting disclosures within",
@@ -43,13 +50,6 @@ $(function () {
         "source": "Interesting disclosures within",
         "projectUrl": "http://tinyletter.com/daveburdick/letters/interesting-disclosures-3-a-revised-office-wearable-technology-policy-from-dave-in-hr",
         "text": "The times, they are a-changin’, and so is our dress code, in particular the rules pertaining to wearable technology. The full policy can always be accessed on our intranet site, but here are the highlights."
-      },
-      {
-        "title": "\"May I speak to Santa?\"",
-        "subtitle": "Here's how fast your information is sold when you fill out a sketchy form",
-        "source": "The Denver Post",
-        "projectUrl": "http://blogs.denverpost.com/personalinterest/2013/11/14/looking-for-a-job-because-heres-something-else/2321/",
-        "text": "Oh, how nice! After that vaguely job-related tweet, I got this spam reply. Let's have a look down this rabbit hole."
       },
       {
         "title": "Fun with the denomination effect",
