@@ -62,7 +62,7 @@ $(function () {
         "bookCode": "disgruntled",
         "imgAlt": "Disgruntled book cover with a young Black woman's face partially concealed by three stripes of color: pink, yellowish-green and light blue.",
         "bookUrl": "http://www.denverpost.com/books/ci_27421661/asali-solomons-debut-novel-disgruntled-tackles-youth-and",
-        "teaser": "Kenya Curtis isn't yet disgruntled as a Philadelphia public school third-grader in 1984. But \"Disgruntled\" — the title of Asali Solomon's debut novel — is a fair description of everyone who's close to Kenya."
+        "teaser": "Kenya Curtis isn't yet disgruntled as a Philadelphia public school third-grader in 1984. But \"Disgruntled\" - the title of Asali Solomon's debut novel - is a fair description of everyone who's close to Kenya."
       },
     ]
 };
